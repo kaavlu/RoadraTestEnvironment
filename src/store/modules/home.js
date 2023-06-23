@@ -12,7 +12,6 @@ const state = {
 };
 
 const getters = {
-  // Check if signed in
   homePageLinks: (state) => state.homePageLinks,
 
 };
@@ -22,8 +21,8 @@ const actions = {
 };
 
 const mutations = {
-  // toggleErrorModal: (state, value) => {
-  //   state.errorModal = value;
+  // addPageLink: (state, value) => {
+  //   state.homePageLinks.push(value);
   // },
 };
 

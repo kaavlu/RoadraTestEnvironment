@@ -11,6 +11,12 @@ export default {
   components: {
     MainHeader
   },
+  mounted() {
+    // console.log(this.$router.currentRoute)
+    // if (this.$router.currentRoute.path == '/') {
+    //   this.$store.commit("generalModal", "HomeWelcomeModal")
+    // }
+  }
 };
 </script>
 

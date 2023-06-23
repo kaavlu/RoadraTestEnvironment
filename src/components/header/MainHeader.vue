@@ -2,6 +2,7 @@
   <div class="header-wrapper">
     <div class="header-container">
       <Logo />
+      <Modals />
     </div>
 
   </div>
@@ -9,9 +10,10 @@
 
 <script>
 import Logo from "@/components/general/styleComponents/Logo.vue"
-export default {
-  components: { Logo },
+import Modals from "@/components/header/Modals.vue"
 
+export default {
+  components: { Logo, Modals },
 }
 </script>
 
