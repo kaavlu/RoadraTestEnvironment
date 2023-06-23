@@ -22,8 +22,8 @@ const actions = {
 };
 
 const mutations = {
-  // toggleErrorModal: (state, value) => {
-  //   state.errorModal = value;
+  // addPageLink: (state, value) => {
+  //   state.homePageLinks.push(value);
   // },
 };
 
