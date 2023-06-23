@@ -18,7 +18,6 @@ const state = {
 };
 
 const getters = {
-  // Show sign-in or sign-up
   bodyFixed: (state) => state.bodyFixed,
   showHeaderNavMenu: (state) => state.showHeaderNavMenu,
   showFooterNavMenu: (state) => state.showFooterNavMenu,

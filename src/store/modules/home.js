@@ -12,7 +12,6 @@ const state = {
 };
 
 const getters = {
-  // Check if signed in
   homePageLinks: (state) => state.homePageLinks,
 
 };

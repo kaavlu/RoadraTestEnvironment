@@ -16,7 +16,6 @@ const state = {
 };
 
 const getters = {
-  // Check if signed in
   currentStatus: (state) => state.currentStatus,
 
 };
