@@ -4,6 +4,7 @@
       <div v-for="(link, i) in homePageLinks" :key="i" class="link">
         <MainButton :content="link.name" @submit="$router.push(link.path)" />
       </div>
+      <MainButton :content="Modal" @submit="$store.commit('generalModal')" />
     </div>
   </div>
 </template>

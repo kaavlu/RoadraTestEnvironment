@@ -6,8 +6,18 @@
     @mousemove="onMouseMove"
     @click="!disabled && !loading ? $emit('submit') : null"
   >
-
-    <span v-if="content" class="text">{{ content }}</span>
+    <span
+      class="hover-container"
+      v-if="type == 'brand' && !disabled && !customDisabled"
+    >
+      <span class="hover" :style="hoverBackgroundPosition"></span>
+    </span>
+    <pulse-loader
+      v-if="loading"
+      class="loading-box"
+      :color="pulseLoaderColor"
+    ></pulse-loader>
+    <span v-else-if="content" class="text">{{ content }}</span>
     <span
       v-else-if="rawHtml"
       style="position: relative"
@@ -24,8 +34,13 @@
 // Would need to make this two divs, one as the link one as the button, but that could effect parent styling
 // might need to wait for vue3 integration so we can have two outer divs
 
+import PulseLoader from "@/components/general/spinners/PulseLoader.vue";
+
 export default {
   name: "MainButton",
+  components: {
+    PulseLoader,
+  },
   props: {
     content: {
       type: String,
