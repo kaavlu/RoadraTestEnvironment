@@ -1,13 +1,12 @@
 <template>
-  <div class="page-container">
-    <!-- Components here -->
+  <div class="home-container">
     <HomeHero />
     <HomeLinks />
   </div>
 </template>
 
 <script>
-import HomeHero from '@/components/home/HomeHero.vue'
+import HomeHero from '@/components/home/hero/HomeHero.vue'
 import HomeLinks from '@/components/home/HomeLinks.vue'
 
 export default {
@@ -20,8 +19,11 @@ export default {
 </script>
 
 <style scoped>
-.page-container {
+.home-container {
   max-width: var(--home-desktop-max-width);
-  margin: 0px auto;
+  margin: 48px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 </style>

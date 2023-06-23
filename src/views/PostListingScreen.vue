@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: "VerificationView"
+  name: "PostListingScreen"
 }
 </script>
 

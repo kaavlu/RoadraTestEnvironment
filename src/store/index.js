@@ -2,8 +2,7 @@ import Vuex from "vuex";
 import Vue from "vue";
 import home from "./modules/home";
 import utilities from "./modules/utilities";
-import profile from "./modules/profile";
-import verification from "./modules/verification";
+import postListing from "./modules/postListing";
 
 // Load Vuex
 Vue.use(Vuex);
@@ -12,8 +11,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   modules: {
     home,
-    profile,
+    postListing,
     utilities,
-    verification
   },
 });

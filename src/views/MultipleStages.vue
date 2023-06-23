@@ -1,17 +1,12 @@
 <template>
   <div>
-    <h1>
-
-    </h1>
-    <p>
-      
-    </p>
+    <!-- Components here -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "HomeWelcomeModal"
+  name: "MultipleStages"
 }
 </script>
 

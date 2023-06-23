@@ -26,8 +26,6 @@ const getters = {
   topNotificationModal: (state) => state.topNotificationModal,
   fullScreenLoader: (state) => state.fullScreenLoader,
   fullScreenLoaderPercentage: (state) => state.fullScreenLoaderPercentage,
-
-
 };
 
 const actions = {

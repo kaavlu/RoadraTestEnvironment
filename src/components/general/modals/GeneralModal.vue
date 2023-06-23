@@ -55,14 +55,14 @@
 
 import { mapGetters, mapActions } from "vuex";
 import Tooltip from "@/components/general/styleComponents/Tooltip.vue";
-import HomeWelcomeModal from "@/components/home/HomeWelcomeModal.vue";
+import CoolModal from "@/components/home/CoolModal.vue";
 
 
 export default {
   name: "GeneralModal",
   components: {
     Tooltip,
-    HomeWelcomeModal,
+    CoolModal,
   },
   computed: {
     ...mapGetters([
@@ -71,7 +71,7 @@ export default {
     settings() {
       // Settings for each modal
       switch (this.generalModal) {
-        case "HomeWelcomeModal":
+        case "CoolModal":
           return {
             title: "Welcome!",
             blankModal: false,

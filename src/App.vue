@@ -6,20 +6,26 @@
 </template>
 
 <script>
-import MainHeader from "@/components/header/MainHeader.vue"
+import MainHeader from "@/components/header/MainHeader.vue";
+
 export default {
+  name: "MainApp",
   components: {
-    MainHeader
+    MainHeader,
+  },
+  methods: {
+    onResize() {
+      this.$store.commit("updateWindow", window.innerWidth);
+    },
   },
   mounted() {
-    // console.log(this.$router.currentRoute)
-    // if (this.$router.currentRoute.path == '/') {
-    //   this.$store.commit("generalModal", "HomeWelcomeModal")
-    // }
-  }
+    // Watches for our width to add to vuex
+    this.onResize();
+    window.addEventListener("resize", this.onResize);
+  },
 };
 </script>
 
 <style>
-  @import "./assets/styles/general.css";
+@import "./assets/styles/general.css";
 </style>

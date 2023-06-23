@@ -1,12 +1,12 @@
 const state = {
   homePageLinks: [
     {
-      name: "Profile",
-      path: "/profile"
+      name: "A post-listing page",
+      path: "/post-listing-screen"
     },
     {
-      name: "Verification",
-      path: "/verification"
+      name: "Multiple stages",
+      path: "/multiple-stages"
     }
   ]
 };
