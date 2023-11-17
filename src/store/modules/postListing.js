@@ -7,6 +7,7 @@ const state = {
       model: 'Golf'
     },
     status: 'created'
+    //created, documents checked, auction, and post-auction/sold
   }
 };
 
